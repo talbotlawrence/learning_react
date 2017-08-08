@@ -12,7 +12,7 @@
       padding: 20px;
       background-color: black;
     }
-    #container h1 {
+    #container h3 {
       font-size: 70px;
       font-family: sans-serif;
       color: red;
@@ -23,13 +23,19 @@
 <body>
   <div id="container"></div>
   <script type="text/babel">
-    var destination = document.querySelector("#container");
 
-    ReactDOM.render(React.createElement(
-      "h1",
-      null,
-      "Learning React"
-    ), destination);
+    var destination = document.querySelector("#container");
+ 
+    ReactDOM.render(
+      <div>
+        <h3><i>Batman</i></h3>
+        <h3>Iron Man</h3>
+        <h3>Nicolas Cage</h3>
+        <h3>Mega Man</h3>
+      </div>,
+      destination
+    );
+
   </script>
 </body>
 
