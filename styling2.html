@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
 
     <style>
+      /* You technically do not need anything in this style tag in order for React to work */
       body {
         zoom: 200%;
       }
@@ -23,7 +24,7 @@
     <div id="container"></div>
 
     <script type="text/babel">
-
+    // script, variable of class, render a function, another variable of CSS and return the var and JSX
     var Letter = React.createClass({
       render: function() {
         var letterStyle = {
@@ -44,7 +45,7 @@
         );
       }
     });
-
+// variable of div ID, React DOM render of the div of new JSX tags and then var of ID
 var destination = document.querySelector("#container");
 
 ReactDOM.render(
