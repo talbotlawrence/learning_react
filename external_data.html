@@ -8,9 +8,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
  
   <style>
+
     body {
       background-color: #FFCC00;
     }
+
     h1 {
       font-family: sans-serif;
       text-align: center;
@@ -18,12 +20,15 @@
       font-size: 60px;
       margin: -15px;
     }
+
     p {
       font-family: sans-serif;
       color: #907400;
       text-align: center;
     }
+
   </style>
+
 </head>
  
 <body>
@@ -70,7 +75,8 @@
 
       render: function() {
           return (
-              <div>{this.state.ip_address}</div>
+              <!-- <div>{this.state.ip_address}</div> -->
+              <IPAddressDisplay ip={this.state.ip_address}/>
           );
         }
     });
@@ -78,6 +84,7 @@
     ReactDOM.render(
       <div>
         <IPAddressContainer/>
+        <!-- <IPAddressDisplay/> -->
       </div>,
       destination
     );
